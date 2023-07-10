@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Html Assignment</title>
+        <style>
+          body{
+            .image{
+            background-image: url('../../HTML/IMAGE/CHANDIGARH.jpg');
+            background-repeat: no-repeat ;
+            height: 125px;
+            width: 50%;
+            }
+          }
+        </style>
+        </head>
+        <body>
+            <table border="1" width="100%">
+                <tr><td>
+            <h1 style="text-align: center;/">Web Desingning Assignment</h1>
+            <h1 style="text-align: center;/">Term 1</h1>
+            <h1 style="text-align: center;/">Module (HTML) 1</h1></td></tr>
+            </table>
+            <table border="1" cellpadding="7" cellspacing="5">
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                </tr>
+                <tr>
+                    <td><h4>Are the Html tags and element the same thing?</h4></td>
+                    <td> HTML Tags and Elements are sometimes perceived as the same. 
+                        However, they are not. There is a subtle difference between HTML elements and tags that many people aren't aware of.
+                         HTML Tags are building blocks of HTML Page. They tell the browser how it should display content to the user. 
+                         A tag starts with a < bracket and ends with a > bracket.</td>
+                </tr>
+                <tr>
+                    <td><h4>What are tags and attribuites in HTML?</h4></td>
+                    <td> Tags are come in between < angular brackets >, for eg. h1, p, body, head,
+                        meta etc. 90 % tags are come with open and closing tag.<br><br>
+                        They provides some Additional Information to our element, They always
+                            written in Start tag.</td>
+
+                </tr>
+                <tr>
+                    <td><h4>What are void elements in HTML? with exampal </h4></td>
+                    <td>A void element in HTML is a self-closing tag that does not require a closing tag.
+                        ex. <img src="../../HTML/IMAGE/CHANDIGARH.jpg"/> <input type="text"/><a href="Home">Home</a>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><h4>What are HTML Entity? With exampal</h4></td>
+                    <td>They are reserved characters are use for HTML document.
+                    <p> eg. This is a currency symbol &gt; </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h4>What are diffrent types of list in HTML? With exampal.</h4></td>
+                    <td> In HTML, there are three types of lists: unordered, ordered and description lists. Each of them is defined using different tags. Let’s have a look.
+                     <h3> Example of the HTML.</h3>
+                      <ul> tag for creating an unordered list:
+                        <!DOCTYPE html>
+                        <html>
+                          <head>
+                            <title>Title of the document</title>
+                          </head>
+                          <body>
+                            <h1>An unordered list:</h1>
+                            <ul>
+                              <li>This is a list item</li>
+                              <li>This is another list item</li>
+                              <li>This is one more list item</li>
+                            </ul>
+                          </body>
+                        </html>
+                     <h3>Example of the HTML.</h3> 
+                      <ol> tag for creating an ordered list:
+                        <!DOCTYPE html>
+                        <html>
+                          <head>
+                            <title>Title of the document</title>
+                          </head>
+                          <body>
+                            <h1>An ordered list:</h1>
+                            <ol>
+                              <li>This is List item number 1</li>
+                              <li>This is List item number 2</li>
+                              <li>This is List item number 3</li>
+                            </ol>
+                          </body>
+                        </html>
+                       <h3> Example of the HTML.</h3> 
+                        <dl> tag for creating a description list:
+                        <!DOCTYPE html>
+                        <html>
+                          <head>
+                            <title>Title of the document</title>
+                          </head>
+                          <body>
+                            <h1>Description Lists:</h1>
+                            <dl>
+                              <dt>Tea</dt>
+                              <dd>- hot drink</dd>
+                              <dt>Juice</dt>
+                              <dd>- cold drink</dd>
+                            </dl>
+                          </body>
+                        </html>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>What is the 'class' attribute in HTML?With Example.</h4></td>
+                        <td>The class attribute in HTML is used to define a class of elements. 
+                            It is used to group elements with similar properties. The class attribute can be added to any HTML element. 
+                            For example, if you want to style all the headings in your document with a specific font and color, you can add the class attribute to all the headings and then define the style for that class in your CSS file.
+
+                          <h3>  Here’s an example of how to use the class attribute in HTML:</h3>
+                            
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                            <style>
+                              .my-class {
+                                color: red;
+                                font-size: 20px;
+                              }
+                            </style>
+                            </head>
+                            <body>
+                            
+                            <h1 class="my-class">This is a heading</h1>
+                            <p class="my-class">This is a paragraph.</p>
+                            
+                            </body>
+                            </html></td>
+                    </tr>
+                    <tr>
+                        <td><h4>What is difference between id attribute and class attribute in html elements. With exampal.</h4></td>
+                        <td>An ID is used to identify a single element,
+                             whereas a class is used to identify a group of elements.
+                            <h3>Class attribute ex.</h3>
+                                <html>
+                <head>
+                <title>HTML Classes</title>
+       <style>
+      .red{
+       color:red;
+       }
+      </style>
+     </head>
+      <body>
+     <h1 class="red">Hey! I'm an Important Heading..</h1>
+     <p class="red">This is an ordinary paragraph..</p>
+    </body>
+    </html>
+    <h3>Id attribute ex.</h3>
+    <!DOCTYPE html>
+    <html>
+    <title> HTML ID</title>
+    <head>
+    <style>
+        #heading{
+            color: khaki;
+            background-color: teal;
+        }
+        #para{
+            color: teal;
+            background-color:khaki;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Id Selector (#)</h1>
+    <p id="para">It will Apply in selected Id only. Id Always be Unique</p>
+</body>
+</html>
+     </td>
+ </tr>
+ <tr>
+    <td><h4>What are various formating tag in HTML?</h4></td>
+    <td><b> - Bold text
+        <strong> - Important text
+        <i> - Italic text
+        <em> - Emphasized text
+        <mark> - Marked text
+        <small> - Smaller text
+        <del> - Deleted text
+        <ins> - Inserted text
+        <sub> - Subscript text
+        <sup> - Superscript text
+</td>
+ </tr>
+ <tr>
+    <td><h4>How is Cell Pdding differant from Cell Spacing? Write exampal.</h4></td>
+    <td>Cellpadding specifies the space between the border of a table cell and its contents.<br>
+        Cellspacing specifies the space between cells.
+    <h3>ex.</h3><br>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <tital>Table</tital>
+        </head>
+        <body>
+    <table border="1" cellpadding="4"cellspacing="5">
+<thead>
+<td><span>Name</span></td>
+<td><span>Age</span></td>
+</thead>
+<tbody>
+<tr>
+ <td>Rani</td>
+ <td>30</td>
+</tr>
+<tr>
+ <td>Rajan</td>
+ <td>35</td>
+</tr>
+<tr>
+ <td>Akshaya</td>
+ <td>17</td>
+</tr>
+<tr>
+ <td>Ashick</td>
+ <td>13</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html></td>
+
+ </tr>
+ <tr>
+    <td><h4>How can we club two or more rows or colums into a singal row or column in an HTML table? With exampal.</h4></td>
+    <td> It can be done by using the rowspan and colspan attribute in HTML. 
+         The rowspan is used to merge or combine the number of cells in a row whereas the colspan is used to merge column cells in a table. 
+        <h3>ex.</h3>
+        <!DOCTYPE html>
+        <html>
+            <head></head>
+            <body>
+        <table border="1">
+            <tr>
+            <th rowspan="2">rollno</th>
+            <th rowspan="2">Name</th>
+            <th colspan="3">Marks</th>
+            </tr>
+            <tr>
+            <td>c++</td>
+            <td>Java</td>
+            </tr>
+            <tr>
+            <td>1001</td>
+            <td>ali</td>
+            <td>67</td>
+            <td>67</td>
+            </tr>     
+            </body>
+            </html>
+            </tr> </td></table>
+ </tr>
+ <tr>
+    <td><h4>What is the differant between a blocl-level element and inline element?</h4></td>
+    <td>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.<br>
+        An inline element does not start on a new line.
+</td>
+ </tr>
+ <tr>
+    <td><h4>How to creat Hyperlink in HTML? With exampal.</h4></td>
+    <td>1.Use the <a> element to define a link.<br>
+        2.Use the href attribute to define the link address.<br>
+        3.Use the target attribute to define where to open the linked document.<br>
+        4.Use the <img> element (inside <a> ) to use an image as a link.<br>
+        <!DOCTYPE html>
+        <html>
+           <head>
+              <title>HTML Hyperlinks</title>
+           </head>
+           <body>
+            <p>
+             All Tags <a href="../../HTML/Task/tag.html">Tags</a></p>
+           </body>
+        </html></td>
+ </tr>
+ <tr>
+    <td><h4>What is use of an iframe tag? With exampal.</h4></td>
+    <td>An inline frame is used to embed another document within the current HTML document.<br>
+        <h3>ex.</h3>
+        <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/YxWlaYCA8MU"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    </td>
+ </tr>
+ <tr>
+    <td><h4>What is use of a span tag?Expilan with exampal.</h4></td>
+    <td>The span tag is used for the grouping of inline elements & this tag does not make any visual change by itself. span is very similar to the div tag, but div is a block-level tag and span is an inline tag.<br>
+        <h3>ex.</h3>
+        <!DOCTYPE html>
+        <html>
+         
+        <body>
+            <h2>Welcome To GeeksforGeeks</h2>
+             
+         
+        <p>GeeksforGeeks is a
+                <span style="color:red;font-weight:bolder">
+                    computer science</span> portal for
+                <span style="background-color: lightgreen;">geeks</span>.
+            </p>
+         
+         
+        </body>
+         
+        </html></td>
+ </tr>
+ <tr>
+    <td><h4>How to insert a picture into a background image of a web page? With exampal.</h4></td>
+    <td class="image">background Imnage    
+ </td>
+ </tr>
+ <tr>
+    <td><h4>How are active links differnt from normal links?</h4></td>
+    <td>Normal (unvisited) link is underlined and blue.<br>
+         An active link is underlined and red.<br>
+         Those that don't have a mouse cursor over that link is considered a normal link. </td>
+</tr>
+<tr>
+    <td><h4>What are the differant tags to separate section of text?</h4></td>
+    <td>The br tag is one way to separate the lines of text. There are other tags like the p tag and blockquote tag that are also used to separate sections of text.</td>
+</tr>
+<tr>
+    <td><h4>What is SVG?</h4></td>
+    <td>SVG stands for Scalable Vector Graphics · <br>
+        Scalable Vector Graphics (SVG) is an XML-based markup language for describing two-dimensional based vector graphics.<br>
+        SVG graphics do NOT lose any quality if they are zoomed or resized.</td>
+</tr>
+<tr>
+    
+    <td><h4>What is differnt between HTML and XHTML?</h4></td>
+   <td> <table border="1">
+    <tr><th>HTML</th>
+    <th>XHTML</th></tr>
+    <tr>
+        <td>HTML stands for Hypertext Markup Language.</td>
+       <td> XHTML stands for Extensible Hypertext Markup Language</td>
+       <tr>
+       <td> HTML can use open tags, such as br tag</td>
+        <td>All unclosed tags must be closed in XHTML</td>
+        </td></table>
+</tr>
+<tr>
+    <td><h4>What are logical and physical tag in HTML?</h4></td>
+    <td>Logical tags are used to tell the browser what kind of text is written inside the tags. 
+        They are different from physical tags because physical tags are used to decide the appearance of the text and do not provide any information about the text.<br>
+    </td>
+</tr>
+    
+ 
+            </table>
+        </body>
+
