@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniquevale</title>
+</head>
+<body>
+    <script>
+    let Arr = [100, 23, 45, 67, 45,
+    33, 34, 69, 100, 23];
+ 
+let outputArray = [];
+ 
+let count = 0;
+ 
+let start = false;
+ 
+for (let j = 0; j < Arr.length; j++) {
+    for (let k = 0; k < outputArray.length; k++) {
+        if (Arr[j] == outputArray[k]) {
+            start = true;
+        }
+    }
+    count++;
+    if (count == 1 && start == false) {
+        outputArray.push(Arr[j]);
+    }
+    start = false;
+    count = 0;
+}
+ 
+console.log(outputArray);
+    </script>
+</body>
+</html>
