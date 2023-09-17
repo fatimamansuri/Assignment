@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: auto;
+            width: 50%;
+            border: 3px solid black;
+            padding: 20px;
+             }
+        table{
+            border: 2px solid black;
+            font-weight: bold;
+            margin-left: 400px;     
+        }
+        input[type=number]{
+            border-radius: 5px;
+            max-width: 100%;
+            }
+        label{
+            font-weight: bold;
+        }    
+        button{
+            width: 50%;
+            padding: 10px;
+            font-weight: bold;
+            background-color: black;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Marksheet</h1>
+        <form>
+            <div class="sub1">
+                <label>C Languge</label><br><br>
+                <input id="subone" type="number" name="" placeholder="Marks">
+            </div><br>
+            <div class="sub2">
+                <label>C++ Languge</label><br><br>
+                <input id="subtwo" type="number" name="" placeholder="Marks">
+            </div><br>
+            <div class="sub3">
+                <label>Database</label><br><br>
+                <input id="subthree" type="number" name="" placeholder="Marks">
+            </div><br>
+            <div class="sub4">
+                <label>HTML</label><br><br>
+                <input id="subfoure" type="number" name="" placeholder="Marks">
+            </div><br>
+            <div class="sub5">
+                <label>CSS</label><br><br>
+                <input id="subfive" type="number" name="" placeholder="Marks">
+            </div><br>
+            <div class="sub6">
+                <label>php</label><br><br>
+                <input id="subsix" type="number" name="" placeholder="Marks">
+            </div><br>
+            <div class="sub7">
+                <label>Core java</label><br><br>
+                <input id="subseven" type="number" name="" placeholder="Marks">
+            </div><br>
+            <div>
+                <button onclick=" return result()">Result</button><br><br>
+            </div>
+        </form>
+        <div>
+            <table>
+                <tr>
+                    <td>Total Marks:</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>Obtained Marks:</td>
+                    <td id="ans"></td>
+                </tr>
+                <tr>
+                    <td>Parsantage:</td>
+                    <td id="per"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function result(){
+            var a=parseInt(document.getElementById("subone").value);
+            var b=parseInt (document.getElementById("subtwo").value);
+            var c=parseInt (document.getElementById("subthree").value);
+            var d=parseInt(document.getElementById("subfoure").value);
+            var e=parseInt (document.getElementById("subfive").value);
+            var f=parseInt(document.getElementById("subsix").value); 
+            var g=parseInt (document.getElementById("subseven").value);
+            var ans=a+b+c+d+e+f+g;
+              document.getElementById("ans").innerHTML=ans;
+              var per=ans/500*100;
+              document.getElementById("per").innerHTML=per;
+              return false;
+        }
+    </script>
+
+</body>
+</html>
