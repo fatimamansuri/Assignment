@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  background: lightskyblue;
+}
+.main1{
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 10px;
+}
+.main2{
+    display: flex;
+    justify-content: space-around;
+
+}
+.icon{
+    margin-left: 350px;
+}
+button{
+    width: 100px;
+    padding: 10px;
+    background: red;
+    color: white;
+}
+.main3{
+    background: white;
+    padding: 10px;
+}
+input[type=text], input[type=number], input[type=email] {
+    padding: 10px;
+}

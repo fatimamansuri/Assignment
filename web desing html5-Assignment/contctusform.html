@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>CONTACT US</h1><hr><br>
+        <div class="main1">
+            <div>
+            <p>ADDRESS:</p>
+            <P>Saint Marco Street, 6th </P>
+            <p>floor,Tokyo,japan,12346.</p></div>
+            <div> 
+           <pre style="font-size: larger;"><i class="fa-solid fa-phone" style="color: #e51506;"></i>+91 123457890<br>
+<i class="fa-solid fa-envelope" style="color: #025cf7;"></i>exmpal@gmail.com</pre>
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot" style="color: #da2b2b;"></i>
+            </div>
+        </div><br>
+        <form action="">
+        <div class="main3">
+            <div>
+                <input type="text" name="uname" id="uname" onkeypress="onlyAlpha(this, 'error1')" placeholder="Name" required>
+                <span id="error1"></span>
+                <input type="text" placeholder="Company" name="" required><br><br>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" name="" required> 
+                <input type="text" name="umobile" id="umobile" onkeypress="MobileCheck(this, 'error4')" placeholder="Mobile" required>
+                <span id="error4"></span>
+        
+            </div><br>
+            <div>
+            <div  class="main2">
+                <input type="text" name="message" value="Message......" style="height: 150px; width: 300px;" required>
+
+            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58751.03012362435!2d72.48492132167968!3d23.0259978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84faa5a36071%3A0x9af325a448f09478!2sTops%20Technologies!5e0!3m2!1sen!2sin!4v1695135252635!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                <div class="button1">
+                    <button>send</button>
+                </div></form>
+                
+                <div class="icon">
+                
+                    <i class="fa-brands fa-square-facebook fa-lg" style="color: #0959e1;"></i>
+                    <i class="fa-brands fa-square-twitter fa-lg" style="color: #0854d9;"></i>
+                    <i class="fa-brands fa-linkedin fa-lg" style="color: #226cec;"></i>
+                    <i class="fa-brands fa-github fa-lg" style="color: #00040a;"></i>
+            </div>
+            </div>
+           
+            
+        </div>
+    </div>
+    <script>
+
+    function onlyAlpha(e,spnid)
+    {
+        var name = /^[a-zA-Z]+$/
+        if(name.test(e.value))
+        {
+            document.getElementById(spnid).innerText = "";
+        }
+        else{
+            
+            document.getElementById(spnid).style.color="blue";
+            document.getElementById(spnid).innerText = "Please Enter only Characters!"
+        }
+    }
+
+    function MobileCheck(e,spnid)
+    {
+        var mobile = /^[0-9]{10}$/
+        if(mobile.test(e.value))
+        {
+            document.getElementById(spnid).innerText = "";
+        }
+        else{
+            
+            document.getElementById(spnid).style.color="blue";
+            document.getElementById(spnid).innerText = "Please Enter Valid Mobile Number!";
+        }
+
+    }
+    </script>
+</body>
+</html>
