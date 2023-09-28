@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gellry</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+          img{
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            display: inline-block;
+            
+          }  
+        
+            
+                .main > div {
+                    display: flex;
+                    justify-content: center;
+                
+                
+                    
+                }
+                .main > div > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .main{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-column: 30%;
+                gap: 20px;
+                background-color: black;
+                 
+        }
+
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10{
+        border: 2px solid whitesmoke;
+        
+         }
+    .box1{
+        grid-column: span 2;
+    }
+    .box4, .box5 {
+        grid-row: span 2;
+    }   
+   .box7{
+    grid-column: span 2;
+   }
+   .box8{
+    grid-row: span 2;
+   }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="box1"> <img src="../../allimage/f.jpg"> </div>
+        <div class="box2"> <img src="../../allimage/f10.jpg"></div>
+        <div class="box3"> <img src="../../allimage/f11.jpg"> </div>
+        <div class="box4"> <img src="../../allimage/f12.jpg"> </div>
+        <div class="box5"><img src="../../allimage/f9.jpg"> </div>
+        <div class="box6"> <img src="../../allimage/f6.jpg"> </div>
+        <div class="box7"><img src="../../allimage/f4.jpg"> </div>
+        <div class="box8"><img src="../../allimage/f6.jpg."> </div>
+        <div class="box9"><img src="../../allimage/f8.jpg">  </div>
+        <div class="box10"><img src="../../allimage/f9.jpg">  </div>
+    </div>
+        
+
+                  
+
+        
+        
+        
+        
+        
+        
+        
+
+
+    </div>
+</body>
+</html>
